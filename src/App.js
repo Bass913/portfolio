@@ -4,6 +4,7 @@ import Particles from 'react-particles-js';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import AboutMe from './components/AboutMe';
+import Services from './components/Services';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       params={{
         particles: {
           number: {
-            value: 30,
+            value: 20,
             density: {
               enable: true,
               value_area: 900
@@ -32,6 +33,7 @@ function App() {
       <Navbar/>
       <Header/>
       <AboutMe/>
+      <Services/>
     </>
   );
 }

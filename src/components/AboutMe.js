@@ -11,7 +11,7 @@ const AboutMe = () => {
                     </div>
                 </div>
                 <div className='col-lg-6 col-xm-12'>
-                    <h1 className='about-heading'>about me</h1>
+                    <h1 className='about-heading'>Qui-suis-je ?</h1>
                     <p>
                         Bonjour ! Je m'appelle Bastien Dikiadi. Je suis étudiant en informatique. J'effectue
                         un Bachelor en 3ème année "Ingénierie du web" à l'ESGI. J'effectue
