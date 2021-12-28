@@ -9,7 +9,7 @@ const Services = () => {
             <h1 className='py-5'>Mes services</h1>
                 <div className='container'>
                     <div className='row'>
-                        <div className='col-md-3 col-sm-6'>
+                        <div className='col-lg-3 col-md-6 col-sm-6'>
                             <div className='box'>
                                 <div className='circle'>
                                     <FontAwesomeIcon className='icon' icon={faDesktop} size='2x'></FontAwesomeIcon>
@@ -20,7 +20,7 @@ const Services = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className='col-md-3 col-sm-6'>
+                        <div className='col-lg-3 col-md-6 col-sm-6'>
                             <div className='box'>
                             <div className='circle'>
                                     <FontAwesomeIcon className='icon' icon={faFileCode} size='2x'></FontAwesomeIcon>
@@ -30,7 +30,7 @@ const Services = () => {
                                     ou via CMS (Wordpress)</p>
                             </div>
                         </div>
-                        <div className='col-md-3 col-sm-6'>
+                        <div className='col-lg-3 col-md-6 col-sm-6'>
                             <div className='box'>
                             <div className='circle'>
                                     <FontAwesomeIcon className='icon' icon={faPython} size='2x'></FontAwesomeIcon>
@@ -41,14 +41,14 @@ const Services = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className='col-md-3 col-sm-6'>
+                        <div className='col-lg-3 col-md-6 col-sm-6'>
                             <div className='box'>
                             <div className='circle'>
                                     <FontAwesomeIcon className='icon' icon={faProjectDiagram} size='2x'></FontAwesomeIcon>
                                 </div>
                                 <h3>Project Management</h3>
-                                <p>Accompagne la conduite de projets numérique depuis la conception jusqu'a la mise 
-                                    en oeuvre. Utilisation des méthodes agiles et waterfall.
+                                <p>Conduite de projets numérique depuis la conception jusqu'a la mise 
+                                    en oeuvre. (Méthodes agiles et waterfall)
                                 </p>
                             </div>
                         </div>
