@@ -1,23 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
-:root{
-  --primary-white: #ffffff; /* Déclaration d'une variable en CSS */
+:root {
+  --primary-white: #ffffff;
   --primary-light-grey: #f4f4f4;
   --primary-grey: #ccd1d9;
   --primary-dark-grey: #666666;
   --primary-orange: #f9ab00;
-  --primary-nav: rgba(255,255,255,0);
-  --primary-dark: #000000;
-  --primary-blue: #37b6ed;
+  --primary-dark: rgb(52, 58, 64);
   --primary-red: #ef4035;
+  --primary-blue: #37b6ed;
+  --primary-hover-red: #f33501;
+  --primary-black: #000000;
 }
 
 body {
-  font-family: 'Roboto', sans-serif !important;
+font-family: "Roboto Condensed", sans-serif !important;
 }
 
-/* *******************  NAVBAR  ********************** */
+
+/************************ NAVBAR *********************************/
+
 nav {
   z-index: 2;
 }
@@ -65,11 +67,12 @@ nav ul li {
 }
 
 
-/* *******************  HEADER  ********************** */
+
+/************************ HEADER *********************************/
 
 .header-wraper {
   position: relative;
-  background: url("header_wallpaper.jpg") no-repeat;
+  background: url(header_wallpaper.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   height: 90vh;
@@ -79,9 +82,9 @@ nav ul li {
   display: flex;
   position: absolute;
   top: 0;
-  bottom: 0;
-  right: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -91,48 +94,44 @@ nav ul li {
 
 .main-info h1 {
   color: var(--primary-orange);
-  font-size: 4.375rem;
   text-transform: uppercase;
 }
 
-@media(max-width: 768px) {
-  .main-info h1 {
-    font-size: 2.5rem !important;
-  }
-}
-
-/* *******************  TYPED TEXT  ********************** */
+/*-------- TYPED TEXT ---------------*/
 .typed-text {
   font-size: 2rem;
   color: var(--primary-white);
 }
 
 @media(max-width: 768px) {
+  .main-info h1 {
+    font-size: 1.7rem !important;
+  }
   .typed-text {
-    font-size: 1.5rem !important;
+    font-size: 1.3rem !important;
+
   }
 }
 
-/* *******************  HEADER MAIN OFFER BUTTON ********************** */
+/*-------- HEADER MAIN OFFER BUTTON ---------------*/
 .btn-main-offer {
-  border: 0.0625rem solid var(--primary-orange);
+  border: 1px solid var(--primary-orange);
   text-transform: uppercase;
   border-radius: 0;
-  padding: 0.9375rem;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
   color: var(--primary-white);
+  margin: 2rem;
   text-decoration: none;
-  font-size: 1.25rem;
-  margin-top: 2rem;
 }
 
 .btn-main-offer:hover {
-  color: var(--primary-white);
+  text-decoration: none;
   background-color: var(--primary-blue);
-  transition: 1s ease-in-out;
+  color: var(--primary-white);
+  transition:  .4s ease-in-out;
 }
 
-
-/* *******************  PARTICLES JS ********************** */
+/*-------- PARTICLES JS ---------------*/
 .tsparticles-canvas-el {
   position: absolute;
   height: 100vh;
@@ -146,9 +145,7 @@ nav ul li {
   }
 }
 
-
-
-/* *******************  ABOUT ME ********************** */
+/************************ ABOUT ME *********************************/
 .photo-wrap {
   display: flex;
   justify-content: center;
@@ -159,7 +156,12 @@ nav ul li {
   width: 16rem;
   border-radius: 50%;
   padding: .3rem;
-  border: 0.1875rem solid var(--primary-orange);
+  border: 1px solid var(--primary-orange);
+}
+
+.about-heading {
+  color: var(--primary-orange);
+  text-transform: uppercase;
 }
 
 @media(max-width: 468px) {
@@ -168,12 +170,7 @@ nav ul li {
   }
 }
 
-.about-heading {
-  color: var(--primary-orange);
-  text-transform: uppercase;
-}
-
-/* *******************  SERVICES  ********************** */
+/************************ SERVICES *********************************/
 .services {
   text-align: center;
   padding-bottom: 2rem;
@@ -181,6 +178,7 @@ nav ul li {
 }
 
 .services h1 {
+  color: var(--primary-dark);
   text-transform: uppercase;
 }
 
@@ -191,7 +189,6 @@ nav ul li {
   border-radius: 50%;
   width: 3.125rem;
   height: 3.125rem;
-
 }
 
 .services .icon {
@@ -209,7 +206,13 @@ nav ul li {
   padding: 0.625rem;
   margin-bottom: 1.875rem;
   background: var(--primary-white);
+  transition: 0.3s ease-in-out;
 }
+
+.services .box h3 {
+  color: var(--primary-black);
+}
+
 
 .services .box:hover {
   background: var(--primary-orange);
@@ -228,7 +231,7 @@ nav ul li {
   color: var(--primary-white);
 }
 
-/* *******************  EXPERIENCES  ********************** */
+/************************ EXPERIENCE *********************************/
 
 .experience {
   padding: 0.7rem;
@@ -250,7 +253,7 @@ nav ul li {
   content: "";
   top: 0;
   left: 50%;
-  margin-left: 0.0625rem;
+  margin-left: -0.0625rem;
   width: 0.125rem;
   height: 100%;
   background: var(--primary-grey);
@@ -273,10 +276,11 @@ nav ul li {
   direction: rtl;
 }
 
+
 .marker {
   width: 1rem;
   height: 1rem;
-  border-radius: 50%;
+  border-radius: 50%;;
   border: 0.3125rem solid var(--primary-dark);
   background: var(--primary-orange);
   margin-top: 0.625rem;
@@ -296,25 +300,121 @@ nav ul li {
   font-weight: 900;
 }
 
-/* *******************  MEDIA  ********************** */
+/*------------ MEDIA ------------------*/
 @media(max-width: 768px) {
-  .experience .container {
-    padding-left: 0;
-  }
+.experience .container {
+  padding-left: 0;
+}
+
   .experience-wrapper::before {
     left: 0.5rem;
     margin-bottom: 1.875rem;
-  }
-  .timeline-block {
-    margin-bottom: 5rem;
   }
   .timeline-block-right {
     float: none;
     width: 100%;
   }
+  
   .timeline-block-left {
     float: none;
-    direction: ltr;
+    direction: ltr; 
     width: 100%;
   }
 }
+
+/************************ PORTFOLIO *********************************/
+.portfolio-wrapper {
+  background: var(--primary-light-grey);
+  padding: 3rem 0;
+}
+
+.portfolio-wrapper h1 {
+  color: var(--primary-orange);
+}
+
+.portfolio-image {
+  width: 15rem;
+  border: 1px solid var(--primary-orange);
+  padding: 0 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.portfolio-image-box {
+  position: relative;
+  margin: 0.5rem;
+}
+
+/*------------ OVERFLOW BOX ------------------*/
+.overflow {
+  position: absolute;
+   opacity: 0;
+   background: var(--primary-black);
+   width: 15rem;
+   height: 8rem;
+   top: 0;
+  border: 1px solid var(--primary-red);
+  cursor: pointer;
+}
+
+.portfolio-image-box:hover .overflow {
+  opacity: 60%;
+  transition: 0.3s ease-in-out;
+}
+
+.portfolio-icon {
+  position: absolute;
+  opacity: 0;
+  margin-left: -8rem;
+  margin-top: 3.6rem;
+  color: var(--primary-orange);
+  font-size: 1.5rem;
+}
+
+.portfolio-image-box:hover .portfolio-icon {
+  opacity: 70%;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/*------------ OVERFLOW BOX ------------------*/
+.portfolio-image-popupbox {
+  width: 45rem;
+  padding: 0 0.5rem;
+}
+
+.hyper-link {
+  cursor: pointer; 
+  color: var(--primary-orange);
+}
+
+.hyper-link:hover {
+  color: var(--primary-red);
+}
+
+/*------------ MEDIA  ------------------*/
+@media(max-width: 768px) {
+  .portfolio-image-popupbox {
+    width: 100%;
+  }
+}
+
+@media(max-height: 570px) {
+.popupbox-wrapper {
+  height: 80%;
+}
+  .portfolio-image-popupbox {
+    width: 50%;
+  }
+}
+
+@media(max-height: 280px) {
+  .popupbox-wrapper {
+    height: 90%;
+  }
+    .portfolio-image-popupbox {
+      width: 30%;
+    }
+  }
+
+
+
