@@ -7,30 +7,32 @@ import AboutMe from './components/AboutMe';
 import Services from './components/Services';
 import Experience from './components/Experience';
 import Portfolio from './components/Portfolio';
+import Contacts from './components/Contacts';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <>
       <Particles
-      className='particles-canvas'
-      params={{
-        particles: {
-          number: {
-            value: 20,
-            density: {
-              enable: true,
-              value_area: 900
-            }
-          },
-          shape: {
-            type: "circle",
-            stroke: {
-              width: 3,
-              color: "#f9ab00"
+        className="particles-canvas"
+        params={{
+          particles: {
+            number: {
+              value: 30,
+              density: {
+                enable: true,
+                value_area: 900
+              }
+            },
+            shape: {
+              type: "circle",
+              stroke: {
+                width: 6,
+                color: "#f9ab00"
+              }
             }
           }
-        }
-      }}
+        }}
       />
       <Navbar/>
       <Header/>
@@ -38,6 +40,8 @@ function App() {
       <Services/>
       <Experience/>
       <Portfolio/>
+      <Contacts />
+      <Footer />
     </>
   );
 }

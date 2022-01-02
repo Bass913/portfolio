@@ -199,7 +199,7 @@ const openPopupboxPortfolio = () => {
     <>
       <img className="portfolio-image-popupbox mb-2" src={portfolio} alt="Portfolio Project..." />
       <p>En effet, le site portfolio sur lequel vous vous trouvez est l'un de mes projets. Je n'ai pas eu recours à un CMS,
-         je l'ai créer from scratch en utilisant Bootstrap 5, HTML/CSS et React.js
+         je l'ai crée from scratch en utilisant Bootstrap 5, HTML/CSS et React.js
       </p>
       <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/Bass913/portfolio.git", "_blank")}>https://github.com/Bass913/portfolio.git</a>
     </>
@@ -220,7 +220,7 @@ const openPopupboxPortfolio = () => {
 
 
   return (
-    <div className="portfolio-wrapper">
+    <div id="portfolio" className="portfolio-wrapper">
       <div className="container">
         <h1 className="text-uppercase text-center py-5">portfolio</h1>
         <div className="image-box-wrapper row row-cols-auto justify-content-center">
