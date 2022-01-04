@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0a63576c.css",
+    "main.js": "/static/js/main.560eba40.js",
+    "static/js/787.9b9c0edf.chunk.js": "/static/js/787.9b9c0edf.chunk.js",
+    "static/media/casino.png": "/static/media/casino.a5cfeb1e448e6f7e8e46.png",
+    "static/media/netflix.png": "/static/media/netflix.92ade9be00c0b1d89ebd.png",
+    "static/media/portfolio.png": "/static/media/portfolio.1affce8cbaf7f76be72c.png",
+    "static/media/header_wallpaper.jpg": "/static/media/header_wallpaper.b2ffd38ee1faff5a4200.jpg",
+    "static/media/info-school.png": "/static/media/info-school.bda1a13a2933482dd84e.png",
+    "static/media/jungle.png": "/static/media/jungle.94b01493cf64befce843.png",
+    "static/media/pendu.png": "/static/media/pendu.5b71fbf39510bb71b6e5.png",
+    "static/media/calculatrice.png": "/static/media/calculatrice.ad67e60398c2c26e8baa.png",
+    "static/media/plusmoins.jpg": "/static/media/plusmoins.7e573cbd24a3112652a0.jpg",
+    "static/media/photo.jpg": "/static/media/photo.c06cfe6a114f5dc7263a.jpg",
+    "index.html": "/index.html",
+    "main.0a63576c.css.map": "/static/css/main.0a63576c.css.map",
+    "main.560eba40.js.map": "/static/js/main.560eba40.js.map",
+    "787.9b9c0edf.chunk.js.map": "/static/js/787.9b9c0edf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a63576c.css",
+    "static/js/main.560eba40.js"
+  ]
+}
