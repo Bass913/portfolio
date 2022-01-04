@@ -172,7 +172,7 @@ const openPopupboxCasino = () => {
 const openPopupboxPlusMoins = () => {
   const content = (
     <>
-      <img className="portfolio-image-popupbox mb-2" src={plusmoins} alt="Plus ou Moins Project..." />
+      <img className="portfolio-image-popupbox" src={plusmoins} alt="Plus ou Moins Project..." />
       <p>Jeu du Plus ou Moins ! Un nombre aléatoire est généré. Le but est de trouver de quel nombre il s'agit. Le programme
         donne un indice à chaque tentative pour nous aider à le déchiffrer. Réalisé en C.
       </p>
@@ -210,7 +210,7 @@ const openPopupboxPortfolio = () => {
     config: {
       titleBar: {
         enable: true,
-        text: "Jeu du Plus ou Moins",
+        text: "Portfolio Project",
       },
       fadeIn: true,
       fadeInSpeed: 500
